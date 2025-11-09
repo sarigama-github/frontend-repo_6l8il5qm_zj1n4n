@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import Spline from '@splinetool/react-spline';
 
 const Hero = () => {
   return (
@@ -9,10 +10,8 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-10 items-center">
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-indigo-200 bg-white text-indigo-700 text-xs font-medium">
-              New drop
-              <span className="inline-flex items-center gap-1 text-indigo-600">
-                AW'25 Collection
-              </span>
+              Introducing
+              <span className="inline-flex items-center gap-1 text-indigo-600">Luxevoh</span>
             </div>
             <h1 className="mt-5 text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-gray-900">
               Elevated essentials for the modern man
@@ -44,17 +43,17 @@ const Hero = () => {
               </div>
             </dl>
           </div>
-          <div className="relative">
-            <div className="aspect-[4/5] w-full rounded-3xl overflow-hidden shadow-2xl">
-              <img
-                src="https://images.unsplash.com/photo-1516826957135-700dedea698c?q=80&w=1972&auto=format&fit=crop"
-                alt="Modern man in tailored jacket"
-                className="h-full w-full object-cover"
+          <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+            <div className="aspect-[4/5] w-full">
+              <Spline 
+                scene="https://prod.spline.design/myxXfbNiwnbTpGFp/scene.splinecode"
+                style={{ width: '100%', height: '100%' }}
               />
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-white/20 via-transparent to-transparent" />
             </div>
             <div className="absolute -bottom-6 -left-6 bg-white shadow-xl rounded-2xl p-4 hidden md:block">
-              <p className="text-sm font-medium text-gray-900">Signature wool coat</p>
-              <p className="text-xs text-gray-500">Crafted in Italy</p>
+              <p className="text-sm font-medium text-gray-900">The fragrance of creativity</p>
+              <p className="text-xs text-gray-500">A Luxevoh presentation</p>
             </div>
           </div>
         </div>

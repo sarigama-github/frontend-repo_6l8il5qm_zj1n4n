@@ -11,8 +11,8 @@ const Navbar = ({ cartCount, onSearch }) => {
               <Menu className="h-5 w-5" />
             </button>
             <a href="#" className="text-2xl font-semibold tracking-tight">
-              <span className="text-gray-900">Nordic</span>
-              <span className="text-indigo-600">Mens</span>
+              <span className="text-gray-900">Luxe</span>
+              <span className="text-indigo-600">voh</span>
             </a>
           </div>
 
